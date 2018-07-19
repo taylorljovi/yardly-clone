@@ -1,6 +1,6 @@
 # Yardly clone
 
-Clone of a Lawn mowing service website and it service order app
+Clone of a Lawn mowing service website and it service order app built with ReactJs
 
 ## Running
 
