@@ -2,6 +2,8 @@
 
 Clone of a Lawn mowing service website and it service order app built with ReactJs
 
+Visit https://yardly-clone.netlify.com
+
 ## Running
 
 First `yarn install` to grab all the necessary dependencies. 
