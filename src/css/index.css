@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+button,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+button:focus {
+  border: 0;
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  background: #fff;
+  cursor: pointer;
+}
+.section {
+  width: 80%;
+  margin: 5% auto;
+  padding: 8rem 0;
+}
+.section__header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.3rem;
+}
+.Services + footer {
+  display: none;
+}
+.section-header {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(125deg, rgba(45, 82, 159, 0.7), transparent),
+    url("../images/green-mower-fade.jpg");
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.section-cta {
+  width: 100%;
+  margin: 10rem 0;
+  text-align: center;
+}
+button.cta {
+  background: #2d529f;
+  color: #fff;
+  border: 0;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+button.cta:focus {
+  border: 0;
+  outline: 0;
+}
+li {
+  margin-top: 1rem;
+}
+.service-areas {
+  width: 100%;
+  position: relative;
+  background: url("../images/edmonton-area-map-zoom-11@3x-a8ee43c90cb0895b53d6d237805f704b.png")
+    center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.service-areas-wrapper {
+  margin: 6% auto;
+  padding: 0;
+}
+.service-areas-wrapper .section__header {
+  width: 90%;
+  margin: 0 auto;
+}
+.locations-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.locations-list {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.location-item {
+  color: #2d529f;
+}
+.Check {
+  width: 50px;
+  padding: 1rem;
+}
+.box-img-txt .Check {
+  position: initial;
+}
+
+.unchecked {
+  fill: transparent;
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+  stroke-width: 3;
+}
+.checked {
+  fill: transparent;
+  color: #2d529f;
+  stroke-width: 3;
+}
+.box-text-input,
+.box-mul-text,
+.box-text {
+  position: relative;
+}
+.Check {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box-text-input .Check {
+  position: initial;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 426px) {
+  button.cta {
+    padding: 1rem 2rem;
+  }
+}

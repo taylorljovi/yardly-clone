@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script id="stripe-js" src="https://js.stripe.com/v3/" async></script>
+  <script src="./js/vendor/noframework.waypoints.min.js"></script>
+  <script src="./js/vendor/smooth-scroll.polyfills.min.js"></script>
+  <script>
+
+    window.addEventListener("load", function () {
+      let Help = document.querySelector('.Help');
+      if (window.location.pathname === '/help') {
+        handleStickyNav();
+        handleFaqNav();
+      }
+    })
+    function throttle(type, name) {
+      let obj = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : window
+        , running = !1
+        , func = function () {
+          running || (running = !0 &&
+            requestAnimationFrame(function () {
+              obj.dispatchEvent(new CustomEvent(name))
+              running = !1
+            }))
+        };
+      obj.addEventListener(type, func)
+    };
+
+    function handleStickyNav() {
+      let nav = document.getElementById("faq-nav")
+        , faqSection = (document.querySelector(".subpage-header"),
+          document.querySelector(".general-faq"))
+        , toggleStickyNav = function () {
+          if (nav) {
+            let isScrolledTo = faqSection.getBoundingClientRect().top < 100
+              , isScrolledPast = faqSection.getBoundingClientRect().bottom < 200;
+            if (isScrolledTo && !isScrolledPast) {
+              if (nav.classList.contains('-sticky'))
+                return;
+              let name, arr;
+              name = "-sticky";
+              arr = nav.className.split(" ");
+              if (arr.indexOf(name) == -1) {
+                nav.className += " " + name;
+              }
+            } else {
+              if (!nav.classList.contains('-sticky'))
+                return;
+              nav.className = "faq-nav"
+            }
+          }
+        };
+      this.throttle("scroll", "optimizedScroll");
+      window.addEventListener("optimizedScroll", toggleStickyNav);
+      toggleStickyNav();
+    }
+
+    function handleFaqNav() {
+      let faq = document.getElementById("general-faq")
+        , nav = document.getElementById("faq-nav");
+      if (faq && nav) {
+        let faqCategories = faq.querySelectorAll(".questions .title")
+          , categoryWaypoints = (nav.querySelectorAll(".category"),
+            []);
+        Array.prototype.map.call(faqCategories, function (category) {
+          categoryWaypoints.push({
+            target: category,
+            link: nav.querySelector("[data-target=" + category.getAttribute('id') + "]")
+          })
+        });
+        categoryWaypoints.forEach(function (item) {
+          let index = categoryWaypoints.indexOf(item);
+          item.link.querySelector(".linktext").addEventListener("click", function (event) {
+            let scroll = new SmoothScroll();
+            scroll.animateScroll(item.target, item.link);
+          });
+          function action1() {
+            let name, arr;
+            name = "-active";
+            arr = item.link.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+              item.link.className += " " + name;
+            };
+            if (index > 0) {
+              categoryWaypoints[index - 1].link.className = "category"
+            };
+          }
+          function action2() {
+            console.log(item.link)
+            item.link.className = "category";
+            let name, arr;
+            name = "-active";
+            arr = categoryWaypoints[index - 1].link.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+              if (index > 0) { categoryWaypoints[index - 1].link.className += " " + name };
+            };
+
+          }
+          new Waypoint({
+            element: item.target,
+            handler: function (direction) {
+              "down" === direction ? action1() : action2()
+            },
+            offset: "10px"
+          })
+
+        });
+        let faqQuestions = faq.querySelectorAll(".question-list .question")
+          , questionWaypoints = (nav.querySelectorAll(".question"),
+            []);
+        Array.prototype.map.call(faqQuestions, function (question) {
+          questionWaypoints.push({
+            target: question,
+            link: nav.querySelector("[data-target=" + question.getAttribute('id') + "]")
+          })
+        });
+        questionWaypoints.forEach(function (item) {
+          let index = questionWaypoints.indexOf(item);
+          item.link.addEventListener("click", function (event) {
+            let scroll = new SmoothScroll();
+            scroll.animateScroll(item.target, item.link);
+          });
+          function action1() {
+            let name, arr;
+            name = "-active";
+            arr = item.link.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+              item.link.className += " " + name;
+            };
+            if (index > 0) { questionWaypoints[index - 1].link.className = "question" }
+          }
+          function action2() {
+            console.log(item.link)
+            item.link.className = "question";
+            let name, arr;
+            name = "-active";
+            arr = questionWaypoints[index - 1].link.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+              if (index > 0) { questionWaypoints[index - 1].link.className += " " + name };
+            };
+
+          }
+
+          new Waypoint({
+            element: item.target,
+            handler: function (direction) {
+              "down" === direction ? action1() : action2()
+            },
+            offset: "100px"
+          })
+        })
+      }
+    }
+  </script>
+</body>
+
+</html>

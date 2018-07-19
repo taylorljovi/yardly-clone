@@ -1,0 +1,1401 @@
+.banner {
+    width: 100%;
+    height: 92vh;
+    background-image: url('../images/green-mower-fade.jpg');
+    margin-top: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner__content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45,82,159,.4);
+    position: relative;
+}
+.banner__text-box {
+    width: 40%;
+    color: #fff;
+    position: absolute;
+    padding: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10rem;
+}
+.banner__text--big {
+    font-size: 6.5rem;
+    border-bottom: 4px solid;
+    text-transform: uppercase;
+}
+.banner__text--medium {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+}
+.banner__text--small {
+    font-size: 2rem;
+    margin-top: .7rem;
+}
+.see-how-it-works {
+    margin-top: .7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 20.9rem;
+    border-bottom: 2px solid;
+    font-size: 1.6rem;
+}
+.banner__cta {
+    margin-top: 3rem;
+    color: #fff;
+    background-color: #2d529f;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+}
+.banner__cta:focus{
+    border: 2px solid #fff;
+}
+.banner__text {
+    text-shadow: 2px 2px 10px rgba(45, 82, 159, 1);
+}
+.how-it-works>.diagram {
+    width: 100%;
+    margin: 1.6rem 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+}
+
+.neighborhood-diagram .line,.neighborhood-diagram .shape {
+    fill: #fff;
+    stroke: #384051;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-miterlimit: 10
+}
+
+.neighborhood-diagram .line {
+    fill: none
+}
+
+.neighborhood-diagram .antenna>.shape {
+    fill: #384051;
+    stroke: none
+}
+
+.neighborhood-diagram .antenna>.line {
+    fill: none;
+    stroke: #384051
+}
+
+.neighborhood-diagram .antenna>.radio-waves {
+    opacity: 0
+}
+
+.neighborhood-diagram .location-marker>.shape {
+    fill: #f97168;
+    stroke: none
+}
+
+.neighborhood-diagram .map>.shape {
+    fill: #e9e5dc;
+    stroke: none
+}
+
+.neighborhood-diagram .computer>.shape {
+    stroke: none
+}
+
+.neighborhood-diagram .computer>.stand {
+    fill: #cacaca
+}
+
+.neighborhood-diagram .computer>.back,.neighborhood-diagram .computer>.screen,.neighborhood-diagram .computer>.strip {
+    fill: #384051
+}
+
+.neighborhood-diagram .phone>.line {
+    stroke: #ccc
+}
+
+.neighborhood-diagram .phone>.button {
+    stroke: none;
+    fill: #ccc
+}
+
+.neighborhood-diagram .phone>.back,.neighborhood-diagram .phone>.screen {
+    stroke: none;
+    fill: #384051
+}
+
+.neighborhood-diagram .phone>.order-button {
+    stroke: none;
+    fill: #64be6c
+}
+
+.neighborhood-diagram .handset>.shape {
+    stroke: none;
+    fill: #384051
+}
+
+.neighborhood-diagram .lawn-mower>.body,.neighborhood-diagram .lawn-mower>.cap {
+    fill: #29e877
+}
+
+.neighborhood-diagram .ground .shape {
+    fill: #29e877;
+    stroke-width: 0
+}
+
+.neighborhood-diagram .ground .mask {
+    fill: #fff
+}
+
+.neighborhood-diagram .checkmark>.shape {
+    fill: #fff;
+    stroke: #64be6c
+}
+
+.neighborhood-diagram .checkmark>.line {
+    fill: none;
+    stroke: #64be6c
+}
+
+.neighborhood-diagram .grass>.line {
+    stroke: #64be6c
+}
+
+.neighborhood-diagram>.city-skyline .shape {
+    stroke-width: 0;
+    fill: #f3f3f3
+}
+
+.neighborhood-diagram>.yardly-office>.yardly-logo .shape {
+    stroke-width: 0;
+    fill: #384051
+}
+
+.neighborhood-diagram>.customer-property .customer-house>.roof .shape {
+    fill: #ff4900
+}
+
+.neighborhood-diagram>.sun .shape {
+    fill: #ffe877
+}
+
+.neighborhood-diagram .cloud-large {
+    -webkit-animation: floating-clouds 120s linear infinite;
+    animation: floating-clouds 120s linear infinite
+}
+
+.neighborhood-diagram .cloud-small {
+    -webkit-animation: floating-clouds 240s linear infinite;
+    animation: floating-clouds 240s linear infinite
+}
+
+.neighborhood-diagram>.city-skyline,.neighborhood-diagram>.customer-property,.neighborhood-diagram>.yardly-office {
+    -webkit-transition: -webkit-transform 3s ease;
+    transition: -webkit-transform 3s ease;
+    transition: transform 3s ease;
+    transition: transform 3s ease,-webkit-transform 3s ease
+}
+
+.neighborhood-diagram>.lawn-mower {
+    -webkit-transition: -webkit-transform 5s ease;
+    transition: -webkit-transform 5s ease;
+    transition: transform 5s ease;
+    transition: transform 5s ease,-webkit-transform 5s ease
+}
+
+.neighborhood-diagram>.order-method-app,.neighborhood-diagram>.order-method-phone,.neighborhood-diagram>.order-method-web {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    -webkit-transform: translate3d(-128px,0,0);
+    transform: translate3d(-128px,0,0)
+}
+
+.neighborhood-diagram>.wind {
+    -webkit-transform: translate3d(-100px,60px,0) scale(.75);
+    transform: translate3d(-100px,60px,0) scale(.75)
+}
+
+.neighborhood-diagram>.clouds {
+    -webkit-transform: translate3d(0,60px,0) scale(.75);
+    transform: translate3d(0,60px,0) scale(.75)
+}
+
+.neighborhood-diagram>.sun {
+    -webkit-transform: translate3d(-480px,50px,0) scale(.75);
+    transform: translate3d(-480px,50px,0) scale(.75)
+}
+
+.neighborhood-diagram>.customer-property,.neighborhood-diagram>.lawn-mower,.neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-130px);
+    transform: translateX(-130px)
+}
+
+.neighborhood-diagram>.customer-property>.antenna,.neighborhood-diagram>.lawn-mower>.antenna,.neighborhood-diagram>.yardly-office>.antenna {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+}
+
+.neighborhood-diagram>.customer-property>.tall-grass {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease,-webkit-transform 1s ease
+}
+
+.neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-30px,80px,0) scale(.5);
+    transform: translate3d(-30px,80px,0) scale(.5)
+}
+
+.neighborhood-diagram>.checkmark {
+    -webkit-transform: translate3d(-140px,0,0) scale(.5);
+    transform: translate3d(-140px,0,0) scale(.5);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+}
+
+.-step1b .neighborhood-diagram>.order-method-app {
+    -webkit-transform: translate3d(-99px,-134px,0);
+    transform: translate3d(-99px,-134px,0)
+}
+
+.-step1b .neighborhood-diagram>.order-method-web {
+    -webkit-transform: translate3d(-150px,-120px,0);
+    transform: translate3d(-150px,-120px,0)
+}
+
+.-step1b .neighborhood-diagram>.order-method-phone {
+    -webkit-transform: translate3d(-70px,-90px,0);
+    transform: translate3d(-70px,-90px,0)
+}
+
+.-step1c .neighborhood-diagram>.customer-property,.-step1c .neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-700px);
+    transform: translateX(-700px);
+    -webkit-transition: -webkit-transform 3s ease 1s;
+    transition: -webkit-transform 3s ease 1s;
+    transition: transform 3s ease 1s;
+    transition: transform 3s ease 1s,-webkit-transform 3s ease 1s
+}
+
+.-step1c .neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-220px,80px,0) scale(.5);
+    transform: translate3d(-220px,80px,0) scale(.5);
+    -webkit-transition: -webkit-transform 3s ease 1s;
+    transition: -webkit-transform 3s ease 1s;
+    transition: transform 3s ease 1s;
+    transition: transform 3s ease 1s,-webkit-transform 3s ease 1s
+}
+
+.-step1c .neighborhood-diagram>.order-method-app {
+    -webkit-transform: translate3d(-117px,-114px,0);
+    transform: translate3d(-117px,-114px,0);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease,-webkit-transform 1s ease
+}
+
+.-step2a .neighborhood-diagram>.order-method-app {
+    -webkit-transform: translate3d(-128px,0,0);
+    transform: translate3d(-128px,0,0);
+    -webkit-transition: none;
+    transition: none
+}
+
+.-step2a .neighborhood-diagram>.customer-property,.-step2a .neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-700px);
+    transform: translateX(-700px)
+}
+
+.-step2a .neighborhood-diagram>.customer-property>.antenna,.-step2a .neighborhood-diagram>.yardly-office>.antenna {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.-step2a .neighborhood-diagram>.customer-property>.antenna>.radio-waves,.-step2a .neighborhood-diagram>.yardly-office>.antenna>.radio-waves {
+    -webkit-animation: sending-signals 1s infinite linear;
+    animation: sending-signals 1s infinite linear
+}
+
+.-step2a .neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-220px,80px,0) scale(.5);
+    transform: translate3d(-220px,80px,0) scale(.5)
+}
+
+.-step2b .neighborhood-diagram>.customer-property,.-step2b .neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-130px);
+    transform: translateX(-130px)
+}
+
+.-step2b .neighborhood-diagram>.customer-property>.antenna .-step2b .neighborhood-diagram>.customer-property>.radio-waves,.-step2b .neighborhood-diagram>.customer-property>.antenna .-step2b .neighborhood-diagram>.yardly-office>.radio-waves,.-step2b .neighborhood-diagram>.yardly-office>.antenna .-step2b .neighborhood-diagram>.customer-property>.radio-waves,.-step2b .neighborhood-diagram>.yardly-office>.antenna .-step2b .neighborhood-diagram>.yardly-office>.radio-waves {
+    -webkit-animation: none;
+    animation: none
+}
+
+.-step2b .neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-30px,80px,0) scale(.5);
+    transform: translate3d(-30px,80px,0) scale(.5)
+}
+
+.-step2c .neighborhood-diagram>.lawn-mower {
+    -webkit-animation: mowing-lawns 5s ease;
+    animation: mowing-lawns 5s ease
+}
+
+.-step2c .neighborhood-diagram>.customer-property>.tall-grass {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: -webkit-transform 1s ease 2.5s;
+    transition: -webkit-transform 1s ease 2.5s;
+    transition: transform 1s ease 2.5s;
+    transition: transform 1s ease 2.5s,-webkit-transform 1s ease 2.5s
+}
+
+.-step3a .neighborhood-diagram>.customer-property,.-step3a .neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-700px);
+    transform: translateX(-700px);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease,-webkit-transform 1s ease
+}
+
+.-step3a .neighborhood-diagram>.customer-property>.pictures,.-step3a .neighborhood-diagram>.yardly-office>.pictures {
+    -webkit-transform: translate3d(0,-50px,0);
+    transform: translate3d(0,-50px,0);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) 1s;
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) 1s;
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) 1s;
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) 1s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) 1s
+}
+
+.-step3a .neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-220px,80px,0) scale(.5);
+    transform: translate3d(-220px,80px,0) scale(.5);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease,-webkit-transform 1s ease
+}
+
+.-step3a .neighborhood-diagram>.customer-property>.tall-grass {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+}
+
+.-step3b .neighborhood-diagram>.customer-property,.-step3b .neighborhood-diagram>.yardly-office {
+    -webkit-transform: translateX(-130px);
+    transform: translateX(-130px);
+    -webkit-transition: -webkit-transform 3s ease;
+    transition: -webkit-transform 3s ease;
+    transition: transform 3s ease;
+    transition: transform 3s ease,-webkit-transform 3s ease
+}
+
+.-step3b .neighborhood-diagram>.customer-property>.pictures,.-step3b .neighborhood-diagram>.yardly-office>.pictures {
+    -webkit-transform: translate3d(-550px,0,0);
+    transform: translate3d(-550px,0,0);
+    -webkit-transition: -webkit-transform 3s ease;
+    transition: -webkit-transform 3s ease;
+    transition: transform 3s ease;
+    transition: transform 3s ease,-webkit-transform 3s ease
+}
+
+.-step3b .neighborhood-diagram>.customer-property>.tall-grass {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+}
+
+.-step3b .neighborhood-diagram>.city-skyline {
+    -webkit-transform: translate3d(-30px,80px,0) scale(.5);
+    transform: translate3d(-30px,80px,0) scale(.5);
+    -webkit-transition: -webkit-transform 3s ease;
+    transition: -webkit-transform 3s ease;
+    transition: transform 3s ease;
+    transition: transform 3s ease,-webkit-transform 3s ease
+}
+
+.-step3c .neighborhood-diagram>.yardly-office>.pictures {
+    -webkit-transform: translate3d(-590px,100px,0) scale(.25);
+    transform: translate3d(-590px,100px,0) scale(.25);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+}
+
+.-step3c .neighborhood-diagram>.customer-property>.tall-grass {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+}
+
+.-step3c .neighborhood-diagram>.checkmark {
+    -webkit-transform: translate3d(-100px,-120px,0) scale(1);
+    transform: translate3d(-100px,-120px,0) scale(1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+    transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+    transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s
+}
+
+@media (min-width: 600px) {
+    .neighborhood-diagram>.ground {
+        -webkit-transform:translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .neighborhood-diagram>.checkmark,.neighborhood-diagram>.lawn-mower {
+        -webkit-transform: translateX(-225px);
+        transform: translateX(-225px)
+    }
+
+    .neighborhood-diagram>.sun {
+        -webkit-transform: translate3d(-430px,50px,0) scale(.75);
+        transform: translate3d(-430px,50px,0) scale(.75)
+    }
+}
+
+@media (min-width: 800px) {
+    .neighborhood-diagram>.ground {
+        -webkit-transform:translateX(0);
+        transform: translateX(0)
+    }
+
+    .neighborhood-diagram>.lawn-mower {
+        -webkit-transform: translateX(-225px);
+        transform: translateX(-225px)
+    }
+
+    .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(-140px,100px,0) scale(.5);
+        transform: translate3d(-140px,100px,0) scale(.5);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .neighborhood-diagram>.sun {
+        -webkit-transform: translate3d(-100px,50px,0) scale(.75);
+        transform: translate3d(-100px,50px,0) scale(.75)
+    }
+
+    .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(-75px,-134px,0);
+        transform: translate3d(-75px,-134px,0)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-web {
+        -webkit-transform: translate3d(-130px,-120px,0);
+        transform: translate3d(-130px,-120px,0)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-phone {
+        -webkit-transform: translate3d(-40px,-90px,0);
+        transform: translate3d(-40px,-90px,0)
+    }
+
+    .-step1c .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step1c .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .-step1c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step1c .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(283px,-115px,0);
+        transform: translate3d(283px,-115px,0);
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step2a .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step2a .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    .-step2a .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step2a .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(283px,0,0);
+        transform: translate3d(283px,0,0);
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .-step2b .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step2b .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    .-step2b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step2b .neighborhood-diagram>.lawn-mower {
+        -webkit-animation: none;
+        animation: none;
+        -webkit-transform: translateX(130px) scale(1);
+        transform: translateX(130px) scale(1);
+        -webkit-transition: -webkit-transform 2s ease-out;
+        transition: -webkit-transform 2s ease-out;
+        transition: transform 2s ease-out;
+        transition: transform 2s ease-out,-webkit-transform 2s ease-out
+    }
+
+    .-step2b .neighborhood-diagram>.customer-property>.tall-grass {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transition: -webkit-transform .5s ease 1.5s;
+        transition: -webkit-transform .5s ease 1.5s;
+        transition: transform .5s ease 1.5s;
+        transition: transform .5s ease 1.5s,-webkit-transform .5s ease 1.5s
+    }
+
+    .-step2c .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step2c .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    .-step2c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step2c .neighborhood-diagram>.lawn-mower {
+        -webkit-animation: none;
+        animation: none;
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 2s ease-in;
+        transition: -webkit-transform 2s ease-in;
+        transition: transform 2s ease-in;
+        transition: transform 2s ease-in,-webkit-transform 2s ease-in
+    }
+
+    .-step3a .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step3a .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    .-step3a .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step3a .neighborhood-diagram>.lawn-mower {
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .-step3a .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(0,-75px,0);
+        transform: translate3d(0,-75px,0);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .-step3b .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-100px,40px,0) scale(.75);
+        transform: translate3d(-100px,40px,0) scale(.75)
+    }
+
+    .-step3b .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    .-step3b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px)
+    }
+
+    .-step3b .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-350px,0,0);
+        transform: translate3d(-350px,0,0);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step3c .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-400px,100px,0) scale(.25);
+        transform: translate3d(-400px,100px,0) scale(.25);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .-step3c .neighborhood-diagram>.customer-property>.tall-grass {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+
+    .-step3c .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(-60px,-120px,0) scale(1);
+        transform: translate3d(-60px,-120px,0) scale(1);
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s
+    }
+}
+
+@media (min-width: 1000px) {
+    .neighborhood-diagram>.ground {
+        -webkit-transform:translateX(0);
+        transform: translateX(0)
+    }
+
+    .neighborhood-diagram>.lawn-mower {
+        -webkit-transform: translateX(-225px);
+        transform: translateX(-225px)
+    }
+
+    .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(-140px,100px,0) scale(.5);
+        transform: translate3d(-140px,100px,0) scale(.5);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .neighborhood-diagram>.sun {
+        -webkit-transform: translate3d(-120px,0,0) scale(1);
+        transform: translate3d(-120px,0,0) scale(1)
+    }
+
+    .neighborhood-diagram>.clouds,.neighborhood-diagram>.wind {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .neighborhood-diagram>.customer-property {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step1b .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step1b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step1c .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step1c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step1c .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(458px,-115px,0);
+        transform: translate3d(458px,-115px,0);
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step2a .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step2a .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step2a .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(458px,200px,0);
+        transform: translate3d(458px,200px,0);
+        -webkit-transition: none;
+        transition: none
+    }
+
+    .-step2b .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step2b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step2b .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(458px,200px,0);
+        transform: translate3d(458px,200px,0);
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step2c .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step2c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step2c .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(458px,200px,0);
+        transform: translate3d(458px,200px,0)
+    }
+
+    .-step3a .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step3a .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step3b .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step3b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step3b .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-525px,0,0);
+        transform: translate3d(-525px,0,0);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step3c .neighborhood-diagram>.city-skyline {
+        -webkit-transform: translate3d(-140px,0,0) scale(1);
+        transform: translate3d(-140px,0,0) scale(1)
+    }
+
+    .-step3c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translateX(-125px);
+        transform: translateX(-125px)
+    }
+
+    .-step3c .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-575px,100px,0) scale(.25);
+        transform: translate3d(-575px,100px,0) scale(.25);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .-step3c .neighborhood-diagram>.customer-property>.tall-grass {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+
+    .-step3c .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(-60px,-120px,0) scale(1);
+        transform: translate3d(-60px,-120px,0) scale(1);
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s
+    }
+}
+
+@media (min-width: 1200px) {
+    .neighborhood-diagram>.checkmark {
+        -webkit-transform:translate3d(-140px,100px,0) scale(.5);
+        transform: translate3d(-140px,100px,0) scale(.5);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .-step1b .neighborhood-diagram>.city-skyline,.-step1b .neighborhood-diagram>.customer-property,.-step1b .neighborhood-diagram>.yardly-office,.neighborhood-diagram>.city-skyline,.neighborhood-diagram>.clouds,.neighborhood-diagram>.customer-property,.neighborhood-diagram>.ground,.neighborhood-diagram>.sun,.neighborhood-diagram>.wind,.neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(25px,-134px,0);
+        transform: translate3d(25px,-134px,0)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-web {
+        -webkit-transform: translate3d(-30px,-120px,0);
+        transform: translate3d(-30px,-120px,0)
+    }
+
+    .-step1b .neighborhood-diagram>.order-method-phone {
+        -webkit-transform: translate3d(60px,-90px,0);
+        transform: translate3d(60px,-90px,0)
+    }
+
+    .-step1c .neighborhood-diagram>.city-skyline,.-step1c .neighborhood-diagram>.customer-property,.-step1c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step1c .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(582px,-115px,0);
+        transform: translate3d(582px,-115px,0);
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step2a .neighborhood-diagram>.city-skyline,.-step2a .neighborhood-diagram>.customer-property,.-step2a .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step2a .neighborhood-diagram>.order-method-app {
+        -webkit-transform: translate3d(582px,200px,0);
+        transform: translate3d(582px,200px,0)
+    }
+
+    .-step2b .neighborhood-diagram>.city-skyline,.-step2b .neighborhood-diagram>.customer-property,.-step2b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step2b .neighborhood-diagram>.lawn-mower {
+        -webkit-animation: none;
+        animation: none;
+        -webkit-transform: translateX(230px) scale(1);
+        transform: translateX(230px) scale(1);
+        -webkit-transition: -webkit-transform 2s ease-out;
+        transition: -webkit-transform 2s ease-out;
+        transition: transform 2s ease-out;
+        transition: transform 2s ease-out,-webkit-transform 2s ease-out
+    }
+
+    .-step2c .neighborhood-diagram>.city-skyline,.-step2c .neighborhood-diagram>.customer-property,.-step2c .neighborhood-diagram>.yardly-office,.-step3a .neighborhood-diagram>.city-skyline,.-step3a .neighborhood-diagram>.customer-property,.-step3a .neighborhood-diagram>.yardly-office,.-step3b .neighborhood-diagram>.city-skyline,.-step3b .neighborhood-diagram>.customer-property,.-step3b .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step3b .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-525px,0,0);
+        transform: translate3d(-525px,0,0);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease,-webkit-transform 1s ease
+    }
+
+    .-step3b .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(-20px,0,0) scale(1);
+        transform: translate3d(-20px,0,0) scale(1);
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s
+    }
+
+    .-step3c .neighborhood-diagram>.city-skyline,.-step3c .neighborhood-diagram>.customer-property,.-step3c .neighborhood-diagram>.yardly-office {
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1)
+    }
+
+    .-step3c .neighborhood-diagram>.yardly-office>.pictures {
+        -webkit-transform: translate3d(-575px,100px,0) scale(.25);
+        transform: translate3d(-575px,100px,0) scale(.25);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44),-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44)
+    }
+
+    .-step3c .neighborhood-diagram>.customer-property>.tall-grass {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+
+    .-step3c .neighborhood-diagram>.checkmark {
+        -webkit-transform: translate3d(40px,-120px,0) scale(1);
+        transform: translate3d(40px,-120px,0) scale(1);
+        -webkit-transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: -webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s;
+        transition: transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s,-webkit-transform 1s cubic-bezier(.87,-.41,.19,1.44) .5s
+    }
+}
+
+@-webkit-keyframes floating-clouds {
+    from {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px,0,0);
+        transform: translate3d(1000px,0,0)
+    }
+}
+
+@keyframes floating-clouds {
+    from {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px,0,0);
+        transform: translate3d(1000px,0,0)
+    }
+}
+
+@-webkit-keyframes sending-signals {
+    0%,100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes sending-signals {
+    0%,100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes mowing-lawns {
+    0% {
+        -webkit-transform: translateX(-130px) scaleX(1);
+        transform: translateX(-130px) scaleX(1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    50% {
+        -webkit-transform: translateX(100px) scaleX(1);
+        transform: translateX(100px) scaleX(1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    51% {
+        -webkit-transform: translateX(90px) scaleX(-1);
+        transform: translateX(90px) scaleX(-1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    100% {
+        -webkit-transform: translateX(-130px) scaleX(-1);
+        transform: translateX(-130px) scaleX(-1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+}
+
+@keyframes mowing-lawns {
+    0% {
+        -webkit-transform: translateX(-130px) scaleX(1);
+        transform: translateX(-130px) scaleX(1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    50% {
+        -webkit-transform: translateX(100px) scaleX(1);
+        transform: translateX(100px) scaleX(1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    51% {
+        -webkit-transform: translateX(90px) scaleX(-1);
+        transform: translateX(90px) scaleX(-1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    100% {
+        -webkit-transform: translateX(-130px) scaleX(-1);
+        transform: translateX(-130px) scaleX(-1);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+}
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+}
+.instructions {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.instruction {
+    width: 29%;
+}
+
+.instruction p {
+    font-size: 1.8rem;
+}
+.benefit-statements .section__header {
+    width: 72%;
+    margin: 0 auto;
+}
+.benefit-statements .section__header + p {
+    text-align: center;
+    margin-top: 4rem;
+}
+.statements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.statement {
+    width: 30%;
+    padding-left: 3rem;
+}
+.statement ul {
+    font-size: 1.7rem;
+    font-weight: 500;
+    list-style: none;
+}
+.statement ul li {
+    position: relative;
+}
+.statement ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .3rem;
+    left: -3rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../svg/check.svg');
+}
+.contact-us {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.contact-wrapper {
+    background-image: url('../images/lawn-care-snow-removal-ios-android-04abe97e2934564591e446d42af0a8c8.png');
+    background-position: right 1rem;
+    background-repeat: no-repeat;
+    background-size: auto 133%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:2em;
+}
+.contact-content {
+    width: 60%;
+}
+.contact-content .title {
+    width: 82%;
+    margin: 4rem auto;
+    line-height: 1.2;
+}
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+}
+.contact-method img {
+    width: 100%;
+}
+.contact-method.app-badge {
+    width: 20rem;
+    display: block;
+    margin: 0 1.5rem;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .banner__text-box {
+        top: 50%;
+        width: 47%;
+        left: 10rem;
+        transform: translateY(-50%);
+        text-align: initial;
+    
+    }
+    .banner__text.banner__text--medium {
+        line-height: 1.2;
+    }
+    .see-how-it-works {
+        margin: initial;
+        width: 51%;
+        margin-top: 1rem;
+    }
+    .section {
+        width: 90%;
+    }
+    .section.contact-us {
+        width: 100%;
+    }
+    .contact-wrapper {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .banner__text.banner__text--big {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .banner__text-box {
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .banner__text.banner__text--medium {
+        line-height: 1.2;
+    }
+    .see-how-it-works {
+        width: 30%;
+        margin: 1.6rem auto;
+    }
+}
+@media screen and (max-width: 426px) {
+    .banner__text.banner__text--big {
+        font-size: 5rem;
+        width: 62%;
+    }
+    .banner__text.banner__text--medium {
+        line-height: 1;
+    }
+    .see-how-it-works {
+        width: 75%;
+    }
+    .banner__cta {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .banner__text.banner__text--small {
+        margin-top: 2rem;
+    }
+    .diagram.neighborhood-diagram {
+        display: none;
+    }
+    .instructions {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+    .instruction {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .section.benefit-statements {
+        padding: 0;
+    }
+    .section__header {
+        width: 90%;
+        font-size: 2.9rem;
+        margin: 0 auto;
+    }
+    .statements {
+        flex-direction: column;
+    }
+    .statement {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .benefit-statements .section__header + p {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .contact-wrapper {
+        background: none;
+        width: 100%;
+    }
+    .contact-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-methods {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;   
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contact-method.app-badge {
+        margin: 2% auto;
+    }
+    .service-areas-wrapper .section__header {
+        font-size: 2rem;
+    }
+    .locations-wrapper {
+        flex-direction: column;
+        width: 90%;
+        margin: 5% auto;
+    }
+    .locations-list {
+        width: 100%;
+        margin: 3% auto;
+    }
+}
+@media screen and (max-width: 321px) {
+    .banner__text-box {
+        top: 52%;
+    }
+    .banner__text.banner__text--big {
+        width: 75%;
+    }
+    .banner__text.banner__text--medium {
+        font-size: 3rem;
+    }
+    .see-how-it-works {
+        width: 90%;
+    }
+}
